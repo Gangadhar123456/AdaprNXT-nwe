@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
-}
+/* src/components/App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styles for Navbar */
+.navbar {
+  background-color: #3498db;
+  width: fit-content;
+  padding: 10px;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+
+.new-navbar{
+display: flex;
+justify-content: flex-start;
+background-color: aliceblue;
+padding: 10px;}
+
+h1{
+  font-size: medium;
+  margin-right: 30px;
+  font-weight: 500;
+}
+
+h1:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+
+.container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  margin: auto 20px auto 20px;
+  margin-top: 20px;
+}
+
+.inside-container {
+  display: flex;
+  align-items: center; 
+}
+
+.box {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-right: 10px; 
+  background-color: rgb(246, 252, 252);
+  padding: 10px;
+  border: 1px solid rgb(194, 186, 186);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.box23{
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+  background-color: rgb(211, 206, 206);
+  padding: 10px;
+  border: 1px solid rgb(211, 206, 206);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.box:last-child {
+  margin-right: 0; 
+}
+
+.box svg {
+  margin-right: 8px; 
+}
+
+button {
+  background-color: rgb(58, 117, 218);
   color: white;
+  font-weight: 500;
+  width: 8%;
+  border: none;
+  display: flex;
+  align-items: center; 
+  height: 40px;
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+button svg {
+  margin-right: 8px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.order-table {
+  margin-top: 20px;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+img{height: 70px;}
